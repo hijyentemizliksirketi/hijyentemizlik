@@ -1,0 +1,13 @@
+# Vercel
+.vercel
+
+# Bağımlılıklar
+node_modules/
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Loglar
+*.log
