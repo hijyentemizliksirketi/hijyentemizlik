@@ -519,8 +519,9 @@ h2 em,.hero-title em,.statement-text em{font-family:var(--fx);font-style:italic;
 .hero-trust svg{width:17px;height:17px;color:var(--accent-2);flex:0 0 auto}
 .hero-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px) saturate(1.3);border-radius:24px;padding:2rem;box-shadow:var(--sh-2);transform-style:preserve-3d}
 .hero-card .hc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem}
+.hero-card .hc-top h3{flex:1;min-width:0}
 .hero-card h3{font-size:1.35rem;font-weight:700}
-.hc-tag{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#04212E;background:var(--grad);padding:.4rem .7rem;border-radius:7px;font-family:var(--fd)}
+.hc-tag{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#04212E;background:var(--grad);padding:.4rem .7rem;border-radius:7px;font-family:var(--fd);flex:0 0 auto;white-space:nowrap}
 .hero-card .sub{color:#A9C2DC;font-size:.95rem;line-height:1.6;margin-bottom:1.4rem}
 .hero-card .btn{width:100%;margin-top:.4rem}
 .hero-card .note{font-size:.84rem;color:#8FA9C6;text-align:center;margin-top:.85rem;display:flex;align-items:center;justify-content:center;gap:.45rem}
@@ -832,6 +833,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 
 /* ============ MOBİL İNCE AYARLAR v2 ============ */
 .contact-grid > *,.why-grid > *,.faq-wrap > *,.about-grid > *,.sec-head > *,.steps > *,.cta-inner > *{min-width:0}
 .form-card .btn,.hero-card .btn{min-width:0}
+.svc:not(.svc-cta) .svc-go{display:none}
 
 .mobile-cta{display:none}
 @media (max-width:960px){
@@ -882,6 +884,11 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 
   .chip{padding:.65rem 1.05rem;font-size:.86rem}
   .foot-word{font-size:2.1rem}
   .stat b{font-size:1.7rem}
+}
+@media (max-width:480px){
+  .hero-title{font-size:2.2rem}
+  .svc{padding:1.4rem}
+  .stats-grid{gap:1.2rem 0}
 }
 </style>
 <noscript><style>.loader{display:none}.reveal,.rl>span{opacity:1;transform:none}</style></noscript>
